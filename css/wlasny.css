@@ -47,9 +47,9 @@ h4{
 	color:#195c9c;
 	font-weight: 600;
 }
-/*.glyphicon{
+.glyphicon{
 	color:#6dbcdb;
-}*/
+}
 .container{
 	margin-right: 0;
 	margin-left: 0;
@@ -80,30 +80,10 @@ h4{
 a, a:hover, a:visited, a:active{
 	text-decoration: none;
 }
-.fa.padd-right, .far.padd-right, .fas.padd-right, .glyphicon.padd-right {
-    padding-right: .5em;
-}
 .notShow{
 	visibility: hidden;
 }
-.form-control {
-    display: block;
-    width: 100%;
-    height: 34px;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    color: #555555;
-    background-color: #ffffff;
-    background-image: none;
-    border: 1px solid #cccccc;
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
-    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
+
 #left_menu_table td a:hover{
 	color: blue;
 }
@@ -157,158 +137,17 @@ header#menu{
 	color:#3d3d3d;
 	background-color:#e7e7e7;
 }
-.navbar-right .dropdown-menu > a, .dropdown-button > a, ul.dropdown-menu > a {
-    color: #606060;
-    display: block;
-    padding: 5px 12px;
-}
 .dropdown-toggle.pointer.user-btn i.fa-user-circle{
 	color: #ffffff;
     margin-left: .4em;
     margin-right: .4em;
     font-size: 13px;
 }
-.dropdown.logout_content .dropdown-menu {
-   	margin-top: 0.5em;
-    border-radius: 0 0 4px 4px;
-    border-top-style: none;
-    opacity: 0.9;
-}
-@media (min-width: 768px){
-	.navbar-right .dropdown-menu {
-	    left: auto;
-	    right: 0;
-	}
-}
-.open > .dropdown-menu {
-    display: block;
-}
-.dropdown-menu {
-    font-size: 12px;
-    border: none;
-}
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    z-index: 1000;
-    display: none;
-    float: left;
-    min-width: 160px;
-    padding: 5px 0;
-    margin: 2px 0 0;
-    list-style: none;
-    font-size: 14px;
-    text-align: left;
-    background-color: #ffffff;
-    border: 1px solid #cccccc;
-    border: 1px solid rgba(0, 0, 0, 0.15);
-    border-radius: 4px;
-    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-    -webkit-background-clip: padding-box;
-    background-clip: padding-box;
-}
-a.logout.logout-link {
-    color: #d9534f;
-}
-.dropdown-divider {
-    height: 0;
-    margin: .5rem 0;
-    overflow: hidden;
-    border-top: 1px solid #eeeeee;
-}
 #global_search {
     position: relative;
     padding: 0;
     display: inline-block;
     z-index: 999;
-}
-@media (min-width: 768px){
-	#global_search input[name="text"] {
-	    width: 15vw;
-	    border-radius: 4px;
-	}
-}
-#global_search_input {
-    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.075);
-    font-family: Arial, 'FontAwesome' !important;
-}
-@media (min-width: 768px){
-	.navbar-form .input-group .input-group-addon, .navbar-form .input-group .input-group-btn, .navbar-form .input-group .form-control {
-	    width: auto;
-	}
-	.navbar-form .form-control {
-	    display: inline-block;
-	    width: auto;
-	    vertical-align: middle;
-	}
-}
-.wrapper.navbar-form.navbar-right{
-	margin-bottom: 0;
-}
-.btn-primary {
-    color: #fff;
-    background: #007bff;
-    border-color: #007bff;
-}
-.input-group-btn {
-    position: relative;
-    font-size: 0;
-    white-space: nowrap;
-}
-.input-group-addon, .input-group-btn {
-    width: 1%;
-    white-space: nowrap;
-    vertical-align: middle;
-}
-.input-group-addon, .input-group-btn, .input-group .form-control {
-    display: table-cell;
-}
-#global_search_btn {
-    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.075);
-}
-.input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group {
-    z-index: 2;
-    margin-left: -1px;
-}
-/*.input-group .form-control:last-child, .input-group-addon:last-child, .input-group-btn:last-child > .btn, .input-group-btn:last-child > .btn-group > .btn, .input-group-btn:last-child > .dropdown-toggle, .input-group-btn:first-child > .btn:not(:first-child), .input-group-btn:first-child > .btn-group:not(:first-child) > .btn {
-    border-bottom-left-radius: 0;
-    border-top-left-radius: 0;
-}*/
-.input-group-btn > .btn {
-    position: relative;
-}
-.sort_up_position {
-    padding-top: 0.56em;
-    padding-bottom: 0.3em;
-    border-left: none !important;
-}
-.btn-default {
-    color: #333333;
-    background-color: #ffffff;
-    border-color: #cccccc;
-}
-.btn {
-    display: inline-block;
-    margin-bottom: 0;
-    font-weight: normal;
-    text-align: center;
-    vertical-align: middle;
-    -ms-touch-action: manipulation;
-    touch-action: manipulation;
-    cursor: pointer;
-    background-image: none;
-    border: 1px solid transparent;
-    white-space: nowrap;
-    padding: 6px 12px;
-    font-size: 14px;
-    line-height: 1.42857143;
-    border-radius: 4px;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
 }
 .user-btn {
     display: inline-block;
@@ -330,28 +169,13 @@ a.logout.logout-link {
 }
 .navbar_buttons{
 	text-align: right;
-	margin-top: 0.1em;
-}
-@media (min-width: 768px){
-	.navbar-right {
-	    float: right !important;
-	    margin-right: -15px;
-	}
-}
-.dropup, .dropdown {
-    position: relative;
+	margin-top: 0.7em;
 }
 .global_search_btn{
 	margin-top: -0.15em;
 }
 ul.nav.navbar-nav.navbar-right>.active>a{
 	background-color:#e7e7e7;
-}
-.navbar-right .dropdown-menu > a:hover, .navbar-right .dropdown-menu > a:focus, .dropdown-button > a:hover, .dropdown-button > a:focus {
-    text-decoration: none;
-    color: #000000;
-    background: #eeeeee;
-    /* text-shadow: 0 1px 2px rgba(0,0,0,0.20); */
 }
 #ul_navigation{
 	margin-top: 0.3em;
@@ -614,7 +438,7 @@ i.far.fa-file-pdf{
 
 #header_section{
 	position: absolute;
-	bottom: -1px;
+	bottom: 0;
 	width: 100%;
 	padding-top: 0rem;
 	padding-bottom: 0.5rem;
@@ -631,8 +455,7 @@ i.far.fa-file-pdf{
 	width: 4rem;
 }
 .footer-header{
-	/*margin-top: 0.5em;*/
-	padding-top: 0.5em;
+	margin-top: 0.5em;
 }
 .footer-media{
 	border: 1px solid #337ab7;
@@ -652,19 +475,6 @@ i.far.fa-file-pdf{
 .footer-media-container{
 	margin-top: 1em;
 	text-align: right;
-}
-.footer_contact{
-	padding-top: 0.5em;
-	font-size: 11px;
-	font-weight: 600;
-}
-.footer_contact a{
-	color: #5c6166;
-	text-decoration: none;
-}
-.footer_contact a:hover{
-	color: #222111;
-	text-decoration: none;
 }
 .web_construnction.img-responsive{
     margin-top: 14em;

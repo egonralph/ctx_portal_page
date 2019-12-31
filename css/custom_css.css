@@ -129,6 +129,10 @@ div.dataTables_wrapper div.dataTables_length select{
 .pagination>li>span{
 	padding: 4px 10px;
 }
+.pagination>li.previous>a,
+.pagination>li.next>a{
+	padding: 4px 8px;
+}
 #left_menu_table td a:hover{
 	color: blue;
 }
@@ -651,12 +655,13 @@ i.far.fa-file-pdf{
 #header_section{
 	position: absolute;
 	bottom: -1px;
-	width: 100%;
 	padding-top: 0rem;
 	padding-bottom: 0.5rem;
-	text-align:left;
 	background-color: #e7e7e7;
 	color: #9d9d9d;
+	width: 100%;
+	text-align:left;
+	z-index: 100;
 }
 #header_section h4{
 	color: #9d9d9d;

@@ -54,11 +54,11 @@ h4{
 	margin-right: 0;
 	margin-left: 0;
 }
-@media (min-width: 1200px){
+/*@media (min-width: 1200px){*/
 	.container {
 	    width: 100%;
 	}
-}
+/*}*/
 .left{
 	text-align: left;
 }
@@ -103,6 +103,31 @@ a, a:hover, a:visited, a:active{
     -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
     -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
     transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+table.dataTable tbody th, table.dataTable tbody td{
+	padding: 4px 10px;
+}
+table.dataTable thead th, table.dataTable thead td{
+	padding: 4px 10px;
+    border-bottom: none;
+}
+table.dataTable.no-footer{
+	    border-bottom: 1px solid #dddddd;
+}
+div.dataTables_wrapper div.dataTables_length select{
+	width: 65px;
+    display: inline-block;
+    padding: 0 0 0 10px;
+}
+/*.dataTables_wrapper .dataTables_paginate .paginate_button{
+	padding: 0.25em .75em;
+}*/
+.pagination>li{
+	display: inline-block;
+}
+.pagination>li>a, 
+.pagination>li>span{
+	padding: 4px 10px;
 }
 #left_menu_table td a:hover{
 	color: blue;
@@ -332,6 +357,14 @@ a.logout.logout-link {
 	text-align: right;
 	margin-top: 0.1em;
 }
+@media (min-width: 1200px) and (max-width: 1291px){
+	.navbar_menu{
+		width: 81%;
+	}
+	.navbar_buttons{
+		width: 19%;
+	}
+}
 @media (min-width: 768px){
 	.navbar-right {
 	    float: right !important;
@@ -482,6 +515,9 @@ i.far.fa-file-pdf{
 .th-pdf-name{width: 60%}
 .th-pdf-rdate{width: 20%}
 .th-pdf-size{width: 15%}
+
+.th-groups-number{width: 5%}
+.th-groups-name{width: 95%}
 
 .main_section{
 	padding-top: 4rem;

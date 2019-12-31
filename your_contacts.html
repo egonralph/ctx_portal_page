@@ -1,21 +1,22 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Context Portal</title>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
-        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-        <!-- CSS: -->
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
-        <link href="css/animate.css" rel="stylesheet" media="screen">
-        <link href="css/responsive.css" rel="stylesheet" media="screen">
-        <link href="css/all.css" rel="stylesheet">
-        <link href="css/custom_css.css" rel="stylesheet" media="screen">
-        <!-- font Open Sans-->    
-        <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext">
-    </head>
-
-    <body>
+  <head>
+    <title>Context Portal</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- CSS: -->
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/animate.css" rel="stylesheet" media="screen">
+    <link href="css/responsive.css" rel="stylesheet" media="screen">
+    <link href="css/all.css" rel="stylesheet">
+    <!-- <link href="css/datatables.min.css" rel="stylesheet" type="text/css"> -->
+    <link href="css/dataTables.bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/custom_css.css" rel="stylesheet" media="screen">
+    <!-- font Open Sans-->    
+    <link rel="stylesheet" type="text/css" media="all" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700&subset=latin,latin-ext">
+  </head>
+  <body>
 
     <!--###############################-->
     <!-- MAIN MENU ###################-->
@@ -34,13 +35,14 @@
                             </button>
                             <div id="logo">
                                 <a class="navbar-brand" href="http://www.contextworld.com">
-                                	<img src="images/logo4.png" class="img-responsive" alt="context world" width="50px">
+                                    <img src="images/logo4.png" class="img-responsive" alt="context world" width="50px">
                                 </a>
                             </div>
                         </div>
+
                         <div class="collapse navbar-collapse" id="my-menu">
                             <ul class="nav navbar-nav navbar-left" id="ul_navigation">
-                                <li class="active"><a href="index_chan_manag_portal.html">What we do</a></li>
+                                <li class="active"><a href="#">What we do</a></li>
                                 <li><a href="who_we_serve.html">Who we serve</a></li>
                                 <li><a href="what_we_cover.html">What we cover</a></li>
                                 <li><a href="news_events.html">News & Events</a></li>
@@ -86,146 +88,213 @@
         </div>
     </header>
 
+    <!--###############################-->
+    <!--Carousel ######################-->
+    <!--###############################-->
+
+    <div id="main_picture">
+         <img src="images/carousel/6n2.jpg" alt="" style="width: 100%; height: 660px;">
+        <div class="carousel-caption">
+            <h1 class="main_picture_header">Channel Management - Lenovo</h1>
+        </div>
+    </div>
+
+
+
+    <!--###############################-->
+    <!--NEWS #######################-->
+    <!--###############################-->
+    
     <div id="main_container">
-        <div id="api">
-            <div id="left_menu" class="split split-horizontal">
-                <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> -->
-                    <table id="left_menu_table" class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                           <tr>
-                                <td><i class="far fa-bell"></i></td>
-                                <td class="left">
-                                    <span><i class="accordion_icon fas fa-caret-down"></i></span>
-                                    <a href="index_chan_manag_portal.html">Subscription services</a>
-                                </td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
-                                <td class="left submenu_item">
-                                    <span><i class="accordion_icon fas fa-caret-right"></i></span>
-                                    <a href="context_analyzer.html">CONTEXT Analyzer</a>
-                                </td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                             <tr>
-                                <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
-                                <td class="left submenu_item"><span>
-                                    <i class="accordion_icon fas fa-caret-right notShow"></i></span>
-                                    <a href="context_reports.html">CONTEXT Reports</a>
-                                </td>
-                                <td><i class="fas fa-star favourite_item_menu checked"></i></td>
-                            </tr>
-                            <tr>
-                                <td ><i class="fas fa-users"></i></td>
-                                <td class="left"><a href="my_groups.html">My Groups</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-truck"></i></td>
-                                <td class="left"><a href="delivery_calendar.html">Delivery Calendar</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr class="active left_menu_selected">
-                                <td><i class="far fa-address-book"></i></td>
-                                <td class="left"><a href="your_contacts.html">Your Contacts</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td><i class="far fa-envelope"></i></td>
-                                <td class="left"><a href="contact_support.html">Contact Support</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                                </tr>
-                        </tbody>
-                    </table>
-                <!-- </div> -->
+        <div id="api" class="main_section_index">   
+            <div id="left_menu" class="split split-horizontal">                         
+                <table id="left_menu_table" class="table table-hover">
+                    <thead>
+                        <tr>
+                            <th></th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><i class="far fa-bell"></i></td>
+                            <td class="left">
+                                <span><i class="accordion_icon fas fa-caret-down"></i></span>
+                                <a href="index_chan_manag_portal.html">Subscription services</a>
+                            </td>
+                            <td><i class="far fa-star favourite_item_menu"></i></td>
+                        </tr>
+                        <tr>
+                            <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
+                            <td class="left submenu_item">
+                                <span><i class="accordion_icon fas fa-caret-right"></i></span>
+                                <a href="context_analyzer.html">CONTEXT Analyzer</a>
+                            </td>
+                            <td><i class="far fa-star favourite_item_menu"></i></td>
+                        </tr>
+                         <tr>
+                            <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
+                            <td class="left submenu_item"><span>
+                                <i class="accordion_icon fas fa-caret-right notShow"></i></span>
+                                <a href="context_reports.html">CONTEXT Reports</a>
+                            </td>
+                            <td><i class="fas fa-star favourite_item_menu checked"></i></td>
+                        </tr>
+                        <tr>
+                            <td ><i class="fas fa-users"></i></td>
+                            <td class="left"><a href="my_groups.html">My Groups</a></td>
+                            <td><i class="far fa-star favourite_item_menu"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="fas fa-truck"></i></td>
+                            <td class="left"><a href="delivery_calendar.html">Delivery Calendar</a></td>
+                            <td><i class="far fa-star favourite_item_menu"></i></td>
+                        </tr>
+                        <tr class="active left_menu_selected">
+                            <td><i class="far fa-address-book"></i></td>
+                            <td class="left"><a href="your_contacts.html">Your Contacts</a></td>
+                            <td><i class="far fa-star favourite_item_menu"></i></td>
+                        </tr>
+                        <tr>
+                            <td><i class="far fa-envelope"></i></td>
+                            <td class="left"><a href="contact_support.html">Contact Support</a></td>
+                            <td><i class="far fa-star favourite_item_menu"></i></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
 
             <div id="right_panel" class="right_menu split split-horizontal">
-                <!-- <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">        -->
-                    <div id="who_we_serve" class="center">
-                         <div class="carousel-caption web_construct_header">
-                            <h1 class="main_picture_header">YOUR CONTACTS</h1>
+                <div id="section1" class="left">
+                    <h4><span class="blue_header left bold">Account Enquiries and Client Support</span></h4>
+                    <hr class="hr_header">
+                </div>
+
+                <!-- Contacts -->
+                <div id="contact_panel" class="left">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 contact_section">
+                                <h5 class="contact_header">For Account Queries and Training</h5>
+                                <a href="mailto:ebetacourt@contextworld.com?subject=subject text">
+                                    <img src="images/contact_img_h.jpg" alt="" class="img-responsive img-circle contact_img">
+                                </a>
+                                <p class="contact_name">Eleonora Betancourt</p>
+                                <p>Account Director</p>
+                                <span class="email_container">
+                                    <a href="mailto:ebetacourt@contextworld.com?subject=subject text"><span class="glyphicon glyphicon-envelope" data-toggle="tooltip" title="ebetacourt@contextworld.com"></span>ebetacourt@contextworld.com</a>
+                                </span>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 contact_section">
+                                <h5 class="contact_header">For Training, Report and Data Enquiries</h5>
+                                <a href="mailto:fhernandez@contextworld.com?subject=subject text">
+                                    <img src="images/contact_img_h.jpg" alt="" class="img-responsive img-circle contact_img">
+                                </a>
+                                <p class="contact_name">Francisca Hernandez</p>
+                                <p>Customer Assurance Manager</p>
+                                <!-- <a>fhernandez@contextworld.com</a> -->
+                                <span class="email_container">
+                                    <a href="mailto:fhernandez@contextworld.com?subject=subject text"><span class="glyphicon glyphicon-envelope" data-toggle="tooltip" title="fhernandez@contextworld.com"></span>fhernandez@contextworld.com</a>
+                                </span>
+                            </div>
+
+                            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 contact_section">
+                                <h5 class="contact_header">For General Enquiries</h5>
+                                <a href="mailto:info@contextworld.com?subject=subject text">
+                                    <img src="images/contact_img_h.jpg" alt="" class="img-responsive img-circle contact_img">
+                                </a>
+                                <!-- <a>info@contextworld.com</a> -->
+                                <span class="email_container">
+                                    <a href="mailto:info@contextworld.com?subject=subject text"><span class="glyphicon glyphicon-envelope" data-toggle="tooltip" title="info@contextworld.com"></span>info@contextworld.com</a>
+                                </span>
+                            </div>
                         </div>
-                        <img src="images/carousel/web-construction.jpg" alt="" class="web_construnction img-responsive">
                     </div>
-                <!-- </div> -->
+                </div>
             </div>
         </div>
-
-        <!--###############################-->
-        <!--FOOTER ########################-->
-        <!--###############################-->
-
-        <section id="header_section">
-            <div class="container">
-                <footer class="row">
-                    <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 footer-header">       
-                        <h6>CONTEXT PORTAL &copy; Copyright 2019 </h6>
-                    </div>
-
-                    <div class="col-xs-2 footer_contact">
-                        <span>
-                            <a href="about.html" data-toggle="tooltip" data-placement="left" title="About">About</a>
-                        </span>
-                        <br>
-                        <span style="vertical-align:-20%">
-                            <a href="contact_us.html" data-toggle="tooltip" data-placement="left" title="Contact Us">Contact Us</a>
-                        </span>
-                    </div>
-
-                    <div class="col-xs-2 footer_contact">
-                        <span>
-                            <a href="privacy_policy.html" data-toggle="tooltip" data-placement="left" title="Privacy Policy">Privacy Policy</a>
-                        </span>
-                        <br>
-                        <span style="vertical-align:-20%">
-                            <a href="gdpr.html" data-toggle="tooltip" data-placement="left" title="Data protection - GDPR">Data protection - GDPR</a>
-                        </span>
-                    </div>
-
-                    <div class="col-xs-2 footer_contact">
-                        <span>
-                            <a href="webinars.html" data-toggle="tooltip" data-placement="left" title="Webinars">Webinars</a>
-                        </span>
-                        <br>
-                        <span style="vertical-align:-20%">
-                            <a href="research_updates.html" data-toggle="tooltip" data-placement="left" title="Research Updates">Research Updates</a>
-                        </span>
-                    </div>
-
-                    <div class="col-xs-1 footer_contact">
-                        <span>
-                            <a href="blog.html" data-toggle="tooltip" data-placement="left" title="Blog">Blog</a>
-                        </span>
-                        <br>
-                        <span style="vertical-align:-20%">
-                            <a href="events.html" data-toggle="tooltip" data-placement="left" title="Events">Events</a>
-                        </span>
-                    </div>
-
-                    <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 footer-media-container">
-                        <a class="footer-media" target="_blank" href="https://twitter.com/contextworld" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
-
-                        <a class="footer-media" target="_blank" href="https://www.linkedin.com/company/7584?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1427802982162%2Ctas%3Acontextworld" data-toggle="tooltip" data-placement="left" title="Linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
-
-                        <a class="footer-media" target="_blank" href="https://www.facebook.com/contextworld/" data-toggle="tooltip" data-placement="left" title="Facebook"> <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
-                    </div>
-                </footer>
-            </div>
-        </section>
     </div>
+
+    <!--###############################-->
+    <!--FOOTER ########################-->
+    <!--###############################-->
+
+    <section id="header_section">
+        <div class="container">
+            <footer class="row">
+                <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3 footer-header">       
+                    <h6>CONTEXT PORTAL &copy; Copyright 2019 </h6>
+                </div>
+
+                <div class="col-xs-2 footer_contact">
+                    <span>
+                        <a href="about.html" data-toggle="tooltip" data-placement="left" title="About">About</a>
+                    </span>
+                    <br>
+                    <span style="vertical-align:-20%">
+                        <a href="contact_us.html" data-toggle="tooltip" data-placement="left" title="Contact Us">Contact Us</a>
+                    </span>
+                </div>
+
+                <div class="col-xs-2 footer_contact">
+                    <span>
+                        <a href="privacy_policy.html" data-toggle="tooltip" data-placement="left" title="Privacy Policy">Privacy Policy</a>
+                    </span>
+                    <br>
+                    <span style="vertical-align:-20%">
+                        <a href="gdpr.html" data-toggle="tooltip" data-placement="left" title="Data protection - GDPR">Data protection - GDPR</a>
+                    </span>
+                </div>
+
+                <div class="col-xs-2 footer_contact">
+                    <span>
+                        <a href="webinars.html" data-toggle="tooltip" data-placement="left" title="Webinars">Webinars</a>
+                    </span>
+                    <br>
+                    <span style="vertical-align:-20%">
+                        <a href="research_updates.html" data-toggle="tooltip" data-placement="left" title="Research Updates">Research Updates</a>
+                    </span>
+                </div>
+
+                <div class="col-xs-1 footer_contact">
+                    <span>
+                        <a href="blog.html" data-toggle="tooltip" data-placement="left" title="Blog">Blog</a>
+                    </span>
+                    <br>
+                    <span style="vertical-align:-20%">
+                        <a href="events.html" data-toggle="tooltip" data-placement="left" title="Events">Events</a>
+                    </span>
+                </div>
+
+                <div class="col-xs-12 col-sm-2 col-md-2 col-lg-2 footer-media-container">
+                    <a class="footer-media" target="_blank" href="https://twitter.com/contextworld" data-toggle="tooltip" data-placement="left" title="Twitter"><i class="fab fa-twitter" aria-hidden="true"></i></a>
+
+                    <a class="footer-media" target="_blank" href="https://www.linkedin.com/company/7584?trk=tyah&amp;trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1427802982162%2Ctas%3Acontextworld" data-toggle="tooltip" data-placement="left" title="Linkedin"><i class="fab fa-linkedin-in" aria-hidden="true"></i></a>
+
+                    <a class="footer-media" target="_blank" href="https://www.facebook.com/contextworld/" data-toggle="tooltip" data-placement="left" title="Facebook"> <i class="fab fa-facebook-f" aria-hidden="true"></i></a>
+                </div>
+            </footer>
+        </div>
+    </section>
+
+    <style>
+        .mystyle {
+          width: 100%;
+          padding: 25px;
+          background-color: coral;
+          color: white;
+          font-size: 25px;
+          box-sizing: border-box;
+        }
+    </style>
 
     <!-- JavaScript  -->
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/split.min.js"></script>
+    <script type="text/javascript" src="js/datatables.min.js"></script>
+    <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
 
     <script>
         $("textarea").tooltip();
@@ -280,6 +349,20 @@
                 }
             });
          });
+
+         $(document).ready(function() {
+            $('#mygroups_table').DataTable({
+                "language": {
+                    "paginate": {
+                      "previous": "&#x226A;",
+                      "next": "&#8811;"
+                    },
+                    "search": ""
+                  }
+            });
+            $('.dataTables_filter input').attr("placeholder", "Search...");
+        } );
+
     </script>
-    </body>
+  </body>
 </html>

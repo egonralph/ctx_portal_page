@@ -40,19 +40,18 @@
                         </div>
                         <div class="collapse navbar-collapse" id="my-menu">
                             <ul class="nav navbar-nav navbar-left" id="ul_navigation">
-                                <li class="active"><a href="index_chan_manag_portal.html">What we do</a></li>
+                                <li><a href="index_chan_manag_portal.html">What we do</a></li>
                                 <li><a href="who_we_serve.html">Who we serve</a></li>
                                 <li><a href="what_we_cover.html">What we cover</a></li>
                                 <li><a href="news_events.html">News & Events</a></li>
                                 <li><a href="insights.html">Insights</a></li>
                                 <li><a href="shop.html">Shop</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li class="active"><a href="about.html">About</a></li>
                             </ul>
                         </div>
                     </div>
                 </nav>
             </div>
-
             <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 navbar_buttons">
                 <div class="dropdown navbar-right">
                     <div class="dropdown logout_content">
@@ -87,76 +86,13 @@
     </header>
 
     <div id="main_container">
-        <div id="api">
-            <div id="left_menu" class="split split-horizontal">
-                <!-- <div class="col-xs-2 col-sm-2 col-md-2 col-lg-2"> -->
-                    <table id="left_menu_table" class="table table-hover">
-                        <thead>
-                            <tr>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td><i class="far fa-bell"></i></td>
-                                <td class="left">
-                                    <span><i class="accordion_icon fas fa-caret-down"></i></span>
-                                    <a href="index_chan_manag_portal.html">Subscription services</a>
-                                </td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
-                                <td class="left submenu_item">
-                                    <span><i class="accordion_icon fas fa-caret-right"></i></span>
-                                    <a href="context_analyzer.html">CONTEXT Analyzer</a>
-                                </td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                             <tr class="active left_menu_selected">
-                                <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
-                                <td class="left submenu_item"><span>
-                                    <i class="accordion_icon fas fa-caret-right notShow"></i></span>
-                                    <a href="context_reports.html">CONTEXT Reports</a>
-                                </td>
-                                <td><i class="fas fa-star favourite_item_menu checked"></i></td>
-                            </tr>
-                            <tr>
-                                <td ><i class="fas fa-users"></i></td>
-                                <td class="left"><a href="my_groups.html">My Groups</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td><i class="fas fa-truck"></i></td>
-                                <td class="left"><a href="delivery_calendar.html">Delivery Calendar</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td><i class="far fa-address-book"></i></td>
-                                <td class="left"><a href="your_contacts.html">Your Contacts</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                            <tr>
-                                <td><i class="far fa-envelope"></i></td>
-                                <td class="left"><a href="contact_support.html">Contact Support</a></td>
-                                <td><i class="far fa-star favourite_item_menu"></i></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                <!-- </div> -->
+        <div id="who_we_serve" class="center">
+             <div class="carousel-caption web_construct_header">
+                <h1 class="main_picture_header">BLOG</h1>
             </div>
-
-            <div id="right_panel" class="right_menu split split-horizontal">
-                <!-- <div class="col-xs-10 col-sm-10 col-md-10 col-lg-10">        -->
-                    <div id="who_we_serve" class="center">
-                         <div class="carousel-caption web_construct_header">
-                            <h1 class="main_picture_header">CONTEXT REPORTS</h1>
-                        </div>
-                        <img src="images/carousel/web-construction.jpg" alt="" class="web_construnction img-responsive">
-                    </div>
-                <!-- </div> -->
-            </div>
+            <!-- <div class="web_construct_img_pane"> -->
+            	<img src="images/carousel/web-construction.jpg" alt="" class="web_construnction img-responsive">
+            <!-- </div> -->
         </div>
 
         <!--###############################-->
@@ -223,15 +159,14 @@
     </div>
 
     <!-- JavaScript  -->
-    <script src="js/jquery-3.4.1.min.js"></script>
+     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.js"></script>
     <script src="js/split.min.js"></script>
 
     <script>
         $("textarea").tooltip();
 
-        var split = Split(['#left_menu', '#right_panel'], {sizes: [20, 80], minSize: [100, 800]});
-
+        // var split = Split(['#left_menu', '#right_panel'], {sizes: [20, 80], minSize: [100, 800]});
         $('.accordion_header_1').click(function() {
             if($('.accordion_header_1').hasClass('collapsed')){
                 console.log('extend');

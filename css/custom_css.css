@@ -420,6 +420,10 @@ ul.nav.navbar-nav.navbar-right>.active>a{
 	top:170px;
 	bottom:auto;
 }
+.car-cap-header{
+	right: 0;
+	left: 0;
+}
 .carousel-caption h1{
 	text-transform:uppercase;
 	font-weight:600;
@@ -433,6 +437,16 @@ ul.nav.navbar-nav.navbar-right>.active>a{
 }
 .main_picture_header{
 	text-shadow: 1px 1px 5px #111;
+}
+.main_picture_content{
+	width: 100%;
+	height: 660px;
+}
+@media (max-width: 1366px){
+	.main_picture_content{
+		width: 100%;
+		height: 500px;
+	}
 }
 .hr_header{
 	border-color: #e5e5e5;
@@ -761,4 +775,8 @@ span.email_container a:hover >span.glyphicon.glyphicon-envelope{
     bottom: 0;
     left: 0;
     margin-top: 5em;
+}
+.clause{
+	font-size: 11px;
+	color: #696969;
 }

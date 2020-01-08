@@ -116,47 +116,68 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
-                            <td><i class="far fa-bell"></i></td>
+                        <tr class="clickable-row" data-href="index_chan_manag_portal.html">
+                            <td data-toggle="tooltip" title="Subscription services">
+                                <i class="far fa-bell"></i>
+                            </td>
                             <td class="left">
                                 <span><i class="accordion_icon fas fa-caret-down"></i></span>
                                 <a href="index_chan_manag_portal.html">Subscription services</a>
                             </td>
                             <td><i class="far fa-star favourite_item_menu"></i></td>
                         </tr>
-                        <tr>
-                            <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
+
+                        <tr class="clickable-row" data-href="context_analyzer.html">
+                            <td class="submenu_icon">
+                                <i class="far fa-bell hidden"></i>
+                            </td>
                             <td class="left submenu_item">
                                 <span><i class="accordion_icon fas fa-caret-right"></i></span>
                                 <a href="context_analyzer.html">CONTEXT Analyzer</a>
                             </td>
                             <td><i class="far fa-star favourite_item_menu"></i></td>
                         </tr>
-                         <tr>
-                            <td class="submenu_icon"><i class="far fa-bell hidden"></i></td>
+
+                         <tr class="clickable-row" data-href="context_reports.html">
+                            <td class="submenu_icon">
+                                <i class="far fa-bell hidden"></i>
+                            </td>
                             <td class="left submenu_item"><span>
                                 <i class="accordion_icon fas fa-caret-right notShow"></i></span>
                                 <a href="context_reports.html">CONTEXT Reports</a>
                             </td>
                             <td><i class="fas fa-star favourite_item_menu checked"></i></td>
                         </tr>
-                        <tr>
-                            <td ><i class="fas fa-users"></i></td>
+
+                        <tr class="clickable-row" data-href="my_groups.html">
+                            <td data-toggle="tooltip" title="My Groups">
+                                <i class="fas fa-users"></i>
+                            </td>
                             <td class="left"><a href="my_groups.html">My Groups</a></td>
                             <td><i class="far fa-star favourite_item_menu"></i></td>
                         </tr>
-                        <tr>
-                            <td><i class="fas fa-truck"></i></td>
+
+                        <tr class="clickable-row" data-href="delivery_calendar.html">
+                            <td data-toggle="tooltip" title="Delivery Calendar">
+                                <i class="fas fa-truck"></i>
+                            </td>
                             <td class="left"><a href="delivery_calendar.html">Delivery Calendar</a></td>
                             <td><i class="far fa-star favourite_item_menu"></i></td>
                         </tr>
-                        <tr>
-                            <td><i class="far fa-address-book"></i></td>
+
+                        <tr class="clickable-row" data-href="your_contacts.html">
+                            <td data-toggle="tooltip" title="Your Contacts">
+                                <i class="far fa-address-book"></i>
+                            </td>
                             <td class="left"><a href="your_contacts.html">Your Contacts</a></td>
                             <td><i class="far fa-star favourite_item_menu"></i></td>
                         </tr>
-                        <tr class="active left_menu_selected">
-                            <td><i class="far fa-envelope"></i></td>
+
+                        <tr class="active left_menu_selected clickable-row"
+                            data-href="contact_support.html">
+                            <td data-toggle="tooltip" title="Contact Support">
+                                <i class="far fa-envelope"></i>
+                            </td>
                             <td class="left"><a href="contact_support.html">Contact Support</a></td>
                             <td><i class="far fa-star favourite_item_menu"></i></td>
                         </tr>
@@ -175,8 +196,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4">
-                                <h5>Your questions</h5>
-                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p>
+                                <!-- <h5>Your questions</h5>
+                                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </p> -->
                                 <h5>Address:</h5>
                                 <p>CONTEXT - Dial House<br>
                                     2 Burston Road<br>
@@ -202,6 +223,10 @@
                                         <input type="text" class="form-control" name="user-lname" placeholder="Last Name">
                                     </div>
                                     <div class="form-group">
+                                        <label for="company" class="control-label">Company:</label>
+                                        <input type="text" class="form-control" name="company" placeholder="Company">
+                                    </div>
+                                    <div class="form-group">
                                         <label for="email" class="control-label">Email:</label>
                                         <input type="text" class="form-control" name="email" placeholder=" person@example.com">
                                     </div>
@@ -213,7 +238,7 @@
                                         <p class="clause">CONTEXT needs your information to contact you about our products and services. You may unsubscribe from these communications at any time. For information on how to unsubscribe, as well as our privacy practices and commitment to protecting your privacy, please review our <a href="privacy_policy.html">Privacy Policy</a>.</p>
                                     </div>
                                     <div class="form-group">
-                                        <button type="submit" class="btn btn-success btn-lg">Submit</button>
+                                        <button type="submit" class="btn btn-primary-submit btn-lg">Submit</button>
                                     </div>
                                 </form>
                             </div>
@@ -305,10 +330,21 @@
     <script type="text/javascript" src="js/dataTables.bootstrap.min.js"></script>
 
     <script>
+
+        // clicable whole row in left menu
+        $(document).ready(function($) {
+            $(".clickable-row").click(function() {
+                window.location = $(this).data("href");
+            });
+        });
+
+        // tooltip script
         $("textarea").tooltip();
 
-        var split = Split(['#left_menu', '#right_panel'], {sizes: [20, 80], minSize: [100, 800]});
+        // split script
+        var split = Split(['#left_menu', '#right_panel'], {sizes: [20, 80], minSize: [40, 860]});
 
+        // accordion script
         $('.accordion_header_1').click(function() {
             if($('.accordion_header_1').hasClass('collapsed')){
                 console.log('extend');
@@ -316,10 +352,9 @@
             }else{
                 console.log('colapse');
                 $(".accordion_icon_1").removeClass("fa-caret-down").addClass("fa-caret-right");
-            } 
-             
+            }
         });
-         $('.accordion_header_2').click(function() {
+        $('.accordion_header_2').click(function() {
             if($('.accordion_header_2').hasClass('collapsed')){
                 console.log('extend');
                 $(".accordion_icon_2").removeClass("fa-caret-right").addClass("fa-caret-down");
@@ -327,9 +362,10 @@
                 console.log('colapse');
                 $(".accordion_icon_2").removeClass("fa-caret-down").addClass("fa-caret-right");
             } 
-             
         });
-         $(function(){
+
+        // global_search script
+        $(function(){
             $('#global_search button.search').on('click', function(e) {
                 var $search = $('#global_search');
                 var $pane = $search.find('div.search');
@@ -356,9 +392,11 @@
                     $search.find('#global_search_btn').removeClass('sort_down_position');
                 }
             });
-         });
+        });
 
-         $(document).ready(function() {
+
+        // dataTable script
+        $(document).ready(function() {
             $('#mygroups_table').DataTable({
                 "language": {
                     "paginate": {

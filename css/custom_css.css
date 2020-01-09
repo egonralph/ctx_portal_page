@@ -805,3 +805,24 @@ span.phone_container a:hover >span.glyphicon.glyphicon-earphone{
 	font-size: 11px;
 	color: #696969;
 }
+#top {
+    background: #eee;
+    border-bottom: 1px solid #ddd;
+    padding: 0 10px;
+    line-height: 40px;
+    font-size: 12px;
+    text-align: left;
+    border-radius: 4px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+#calendar {
+	max-width: 1000px;
+	margin: 40px auto;
+	padding: 0 10px;
+}
+th.fc-day-header.fc-widget-header.fc-sun{
+	color: #ff4000;
+}
+select#locale-selector{
+	border-radius: 10px;
+}

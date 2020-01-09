@@ -111,13 +111,13 @@
                 <table id="left_menu_table" class="table table-hover">
                     <thead>
                         <tr>
-                            <th></th>
+                            <th id="small_menu"><i class="fas fa-bars"></i></th>
                             <th></th>
                         </tr>
                     </thead>
                     <tbody>
                         <tr class="clickable-row" data-href="index_chan_manag_portal.html">
-                            <td data-toggle="tooltip" title="Subscription services">
+                            <td class="icon_menu" data-toggle="tooltip" title="Subscription services">
                                 <i class="far fa-bell"></i>
                             </td>
                             <td class="left">
@@ -150,7 +150,7 @@
                         </tr>
 
                         <tr class="active left_menu_selected clickable-row" data-href="my_groups.html">
-                            <td data-toggle="tooltip" title="My Groups">
+                            <td class="icon_menu" data-toggle="tooltip" title="My Groups">
                                 <i class="fas fa-users"></i>
                             </td>
                             <td class="left"><a href="my_groups.html">My Groups</a></td>
@@ -158,7 +158,7 @@
                         </tr>
 
                         <tr class="clickable-row" data-href="delivery_calendar.html">
-                            <td data-toggle="tooltip" title="Delivery Calendar">
+                            <td class="icon_menu" data-toggle="tooltip" title="Delivery Calendar">
                                 <i class="fas fa-truck"></i>
                             </td>
                             <td class="left"><a href="delivery_calendar.html">Delivery Calendar</a></td>
@@ -166,7 +166,7 @@
                         </tr>
 
                         <tr class="clickable-row" data-href="your_contacts.html">
-                            <td data-toggle="tooltip" title="Your Contacts">
+                            <td class="icon_menu" data-toggle="tooltip" title="Your Contacts">
                                 <i class="far fa-address-book"></i>
                             </td>
                             <td class="left"><a href="your_contacts.html">Your Contacts</a></td>
@@ -174,7 +174,7 @@
                         </tr>
 
                         <tr class="clickable-row" data-href="contact_support.html">
-                            <td data-toggle="tooltip" title="Contact Support">
+                            <td class="icon_menu" data-toggle="tooltip" title="Contact Support">
                                 <i class="far fa-envelope"></i>
                             </td>
                             <td class="left"><a href="contact_support.html">Contact Support</a></td>
@@ -453,10 +453,26 @@
 
     <script>
 
-        // clicable whole row in left menu
         $(document).ready(function($) {
+
+            // clicable whole row in left menu
             $(".clickable-row").click(function() {
                 window.location = $(this).data("href");
+            });
+
+            // toggle menu
+            $("#small_menu").click(function() {
+                var split;
+                if(this.offsetWidth<43){
+                    console.log(this.offsetWidth);
+                    $(".gutter.gutter-horizontal").remove();
+                    split = Split(['#left_menu', '#right_panel'], {sizes: [22, 78], minSize: [40, 900]});
+                }else{
+                    console.log(this.offsetWidth);
+                    $(".gutter.gutter-horizontal").remove();
+                    split = Split(['#left_menu', '#right_panel'], {sizes: [2.8, 97.2], minSize: [40, 900]}); 
+                }
+                
             });
         });
 
@@ -464,7 +480,7 @@
         $("textarea").tooltip();
 
         // split script
-        var split = Split(['#left_menu', '#right_panel'], {sizes: [20, 80], minSize: [40, 860]});
+        var split = Split(['#left_menu', '#right_panel'], {sizes: [20, 80], minSize: [40, 900]});
 
         // accordion script
         $('.accordion_header_1').click(function() {

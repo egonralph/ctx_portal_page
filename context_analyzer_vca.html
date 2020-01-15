@@ -65,9 +65,6 @@
                                 <div class="inline-block">
                                     <div class="search input-group hidden">
                                         <input id="global_search_input" autocomplete="off" name="text" class="form-control">
-                                        <!-- <div class="input-group-btn">
-                                            <button id="global_search_btn" type="button" class="options btn btn-default sort_down_position"><i class="fas fa-sort-down"></i></button>
-                                        </div> -->
                                     </div>
                                     <button type="button" class="search form-control btn-primary btn global_search_btn" data-toggle="tooltip" title="Search">
                                         <i class="fas fa-search"></i>
@@ -110,81 +107,191 @@
     <div id="main_container">
         <div id="api" class="main_section_index">   
             <div id="left_menu" class="split split-horizontal">                         
-                <table id="left_menu_table" class="table table-hover">
-                    <thead>
-                        <tr>
-                            <th id="small_menu" data-toggle="tooltip" title="show / hide menu"><i class="fas fa-bars"></i></th>
-                            <th></th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr class="clickable-row" data-href="index_chan_manag_portal.html">
-                            <td class="icon_menu" data-toggle="tooltip" title="Subscription services">
-                                <i class="far fa-bell"></i>
-                            </td>
-                            <td class="left">
-                                <span><i class="accordion_icon fas fa-caret-down"></i></span>
-                                <a href="index_chan_manag_portal.html">Subscription services</a>
-                            </td>
-                            <td><i class="far fa-star favourite_item_menu"></i></td>
-                        </tr>
+                
+                <!-- Hamburger Menu -->
+                <div id="small_menu_container">
+                    <div id="small_menu"
+                        data-toggle="tooltip" title="show / hide menu">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
 
-                        <tr class="active left_menu_selected clickable-row"
-                            data-href="context_analyzer.html">
-                            <td class="submenu_icon">
-                                <i class="far fa-bell hidden"></i>
-                            </td>
-                            <td class="left submenu_item">
-                                <span><i class="accordion_icon fas fa-caret-right"></i></span>
-                                <a href="context_analyzer.html">CONTEXT Analyzer</a>
-                            </td>
-                            <td><i class="far fa-star favourite_item_menu"></i></td>
-                        </tr>
+                <nav id="main_menu">
+                    <ul class="list_menu_container components">
+                        <li class="list_menu" id="sub_serv">
+                            <div class="list_items no_wrap clickable-row" id="subscription_service" data-href="index_chan_manag_portal.html">
+                                <span class="sidebar_icon_menu" 
+                                        data-toggle="tooltip" 
+                                        title="Subscription services">
+                                    <i class="far fa-bell sidebar_icon icon_menu_container"></i>
+                                </span>
+                                <span class="sidebar_caret">
+                                    <i class="accordion_icon fas fa-caret-down"></i>
+                                </span>
+                                <a href="#homeSubmenu"
+                                    data-toggle="collapse" 
+                                    aria-expanded="false" 
+                                    class="dropdown-toggle menu_to_hide">
+                                    Subscription services
+                                </a>
+                                <span class="favourite_item_container">
+                                    <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                </span>
+                            </div>
 
-                         <tr class="clickable-row" data-href="context_reports.html">
-                            <td class="submenu_icon">
-                                <i class="far fa-bell hidden"></i>
-                            </td>
-                            <td class="left submenu_item"><span>
-                                <i class="accordion_icon fas fa-caret-right notShow"></i></span>
-                                <a href="context_reports.html">CONTEXT Reports</a>
-                            </td>
-                            <td><i class="fas fa-star favourite_item_menu checked"></i></td>
-                        </tr>
+                            <ul class="collapse list-unstyled" id="homeSubmenu">
+                                <li class="active left_menu_selected list_submenu">
+                                    <div class="list_items_sub no_wrap menu_to_hide clickable-row" 
+                                    id="context_analyzer" 
+                                    data-href="context_analyzer.html">
+                                        <span class="sidebar_icon_menu" 
+                                            data-toggle="tooltip" 
+                                            title="CONTEXT Analyzer">
+                                            <i class="fas fa-asterisk sidebar_icon menu_hide_icon"></i>
+                                        </span>
+                                        <a href="context_analyzer.html">CONTEXT Analyzer</a>
+                                        <span class="favourite_item_container">
+                                            <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_submenu">
+                                    <div class="list_items_sub no_wrap menu_to_hide clickable-row" 
+                                    id="data_intelligence" 
+                                    data-href="data_intelligence.html">
+                                        <span class="sidebar_icon_menu" 
+                                            data-toggle="tooltip" 
+                                            title="Data Intelligence Service">
+                                            <i class="fas fa-asterisk sidebar_icon menu_hide_icon"></i>
+                                        </span>
+                                        <a href="data_intelligence.html">Data Intelligence Service</a>
+                                        <span class="favourite_item_container">
+                                            <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_submenu">
+                                    <div class="list_items_sub no_wrap menu_to_hide clickable-row" 
+                                    id="price_it" data-href="price_it.html">
+                                        <span class="sidebar_icon_menu" 
+                                            data-toggle="tooltip" 
+                                            title="PriceIT">
+                                            <i class="fas fa-asterisk sidebar_icon menu_hide_icon"></i>
+                                        </span>
+                                        <a href="#">PriceIT</a>
+                                        <span class="favourite_item_container">
+                                            <i class="fas fa-star favourite_item_menu favourite_item_content checked"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_submenu no_access_link">
+                                    <div class="list_items_sub no_wrap menu_to_hide">
+                                        <span class="sidebar_icon_menu" 
+                                            data-toggle="tooltip" 
+                                            title="PriceWatch">
+                                            <i class="fas fa-asterisk sidebar_icon menu_hide_icon"></i>
+                                        </span>
+                                        <span class="no_access_content">PriceWatch</span>
+                                        <span class="favourite_item_container">
+                                            <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_submenu">
+                                    <div class="list_items_sub no_wrap menu_to_hide clickable-row" 
+                                    id="sales_watch" data-href="sales_watch.html">
+                                        <span class="sidebar_icon_menu" 
+                                            data-toggle="tooltip" 
+                                            title="SalesWatch">
+                                            <i class="fas fa-asterisk sidebar_icon menu_hide_icon"></i>
+                                        </span>
+                                        <a href="#">SalesWatch</a>
+                                        <span class="favourite_item_container">
+                                            <i class="fas fa-star favourite_item_menu favourite_item_content checked"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                                <li class="list_submenu no_access_link">
+                                    <div class="list_items_sub no_wrap menu_to_hide">
+                                        <span class="sidebar_icon_menu" 
+                                            data-toggle="tooltip" 
+                                            title="Shipments">
+                                            <i class="fas fa-asterisk sidebar_icon menu_hide_icon"></i>
+                                        </span>
+                                        <span class="no_access_content">Shipments</span>
+                                        <span class="favourite_item_container">
+                                            <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                        </span>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="list_menu">
+                            <div class="list_items no_wrap clickable-row"
+                            id="my_groups" data-href="my_groups.html">
+                                <span class="sidebar_icon_menu" 
+                                        data-toggle="tooltip" 
+                                        title="My Groups">
+                                    <i class="fas fa-users sidebar_icon"></i>
+                                </span>
 
-                        <tr class="clickable-row" data-href="my_groups.html">
-                            <td class="icon_menu" data-toggle="tooltip" title="My Groups">
-                                <i class="fas fa-users"></i>
-                            </td>
-                            <td class="left"><a href="my_groups.html">My Groups</a></td>
-                            <td><i class="far fa-star favourite_item_menu"></i></td>
-                        </tr>
+                                <a href="my_groups.html" class="menu_to_hide">My Groups</a>
 
-                        <tr class="clickable-row" data-href="delivery_calendar.html">
-                            <td class="icon_menu" data-toggle="tooltip" title="Delivery Calendar">
-                                <i class="fas fa-truck"></i>
-                            </td>
-                            <td class="left"><a href="delivery_calendar.html">Delivery Calendar</a></td>
-                            <td><i class="far fa-star favourite_item_menu"></i></td>
-                        </tr>
+                                <span class="favourite_item_container">
+                                    <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list_menu">
+                            <div class="list_items no_wrap clickable-row" 
+                            id="delivery_calendar" data-href="delivery_calendar.html">
+                                <span class="sidebar_icon_menu" 
+                                        data-toggle="tooltip" 
+                                        title="Delivery Calendar">
+                                    <i class="fas fa-truck sidebar_icon"></i>
+                                </span>
 
-                        <tr class="clickable-row" data-href="your_contacts.html">
-                            <td class="icon_menu" data-toggle="tooltip" title="Your Contacts">
-                                <i class="far fa-address-book"></i>
-                            </td>
-                            <td class="left"><a href="your_contacts.html">Your Contacts</a></td>
-                            <td><i class="far fa-star favourite_item_menu"></i></td>
-                        </tr>
+                                <a href="delivery_calendar.html" class="menu_to_hide">Delivery Calendar</a>
 
-                        <tr class="clickable-row" data-href="contact_support.html">
-                            <td class="icon_menu" data-toggle="tooltip" title="Contact Support">
-                                <i class="far fa-envelope"></i>
-                            </td>
-                            <td class="left"><a href="contact_support.html">Contact Support</a></td>
-                            <td><i class="far fa-star favourite_item_menu"></i></td>
-                        </tr>
-                    </tbody>
-                </table>
+                                <span class="favourite_item_container">
+                                    <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list_menu">
+                            <div class="list_items no_wrap clickable-row" 
+                            id="your_contacts" data-href="your_contacts.html">
+                                <span class="sidebar_icon_menu" 
+                                        data-toggle="tooltip" 
+                                        title="Your Contacts">
+                                    <i class="far fa-address-book sidebar_icon icon_menu_container"></i>
+                                </span>
+
+                                <a href="your_contacts.html" class="menu_to_hide">Your Contacts</a>
+
+                                <span class="favourite_item_container">
+                                    <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                </span>
+                            </div>
+                        </li>
+                        <li class="list_menu">
+                            <div class="list_items no_wrap clickable-row" 
+                            id="contact_support" data-href="contact_support.html">
+                                <span class="sidebar_icon_menu" 
+                                        data-toggle="tooltip" 
+                                        title="Contact Suport">
+                                    <i class="far fa-envelope sidebar_icon"></i>
+                                </span>
+
+                                <a href="contact_support.html" class="menu_to_hide">Contact Suport</a>
+
+                                <span class="favourite_item_container">
+                                    <i class="far fa-star favourite_item_menu favourite_item_content"></i>
+                                </span>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
             </div>
 
             <div id="right_panel" class="right_menu split split-horizontal">
@@ -392,16 +499,71 @@
                 window.location = $(this).data("href");
             });
 
+            // expand submenu when it's active
+            $("#subscription_service a").removeClass("collapsed");
+            $("#homeSubmenu").addClass("in");
+            $(".sidebar_caret .accordion_icon").removeClass("fa-caret-right");
+            $(".sidebar_caret .accordion_icon").addClass("fa-caret-down");
+
             // toggle menu
             $("#small_menu").click(function() {
                 var split;
-                if(this.offsetWidth<43){
+                var sidebarWidth;
+
+                // media queries
+                if($('#main_container').width()<1366){
+                    sidebarWidth = 44;
+                }else{
+                    sidebarWidth = 45;
+                }
+                
+                if(this.offsetWidth<sidebarWidth){
                     console.log(this.offsetWidth);
                     $(".gutter.gutter-horizontal").remove();
+                    $(".sidebar_caret").removeClass("hide");
+                    $(".menu_to_hide").removeClass("hide");
+                    $("#left_menu").css( "padding-right", "1em" );
+                    $(".list_items .sidebar_icon_menu").css( "width", "7.5%" );
+                    $(".list_items .favourite_item_container").css( "width", "7.5%" );
+                    $("#small_menu:hover").css( "padding-top", "0.5em" );
+                    $("#small_menu:hover").css( "padding-bottom", "0.5em" );
+
+                    // media queries
+                    if($('#main_container').width()<1366){
+                        $("#small_menu:hover").css( "width", "16%" );
+                    }else{
+                        $("#small_menu:hover").css( "width", "14%" );
+                    }
+                    
+
+                    if($('#homeSubmenu li').hasClass( "active" )){
+                        $('#sub_serv').removeClass( "active left_menu_selected" );
+                    }
+                    
                     split = Split(['#left_menu', '#right_panel'], {sizes: [22, 78], minSize: [40, 900]});
                 }else{
                     console.log(this.offsetWidth);
                     $(".gutter.gutter-horizontal").remove();
+                    $(".sidebar_caret").addClass("hide");
+                    $(".menu_to_hide").addClass("hide");
+                    $("#left_menu").css( "padding-right", "0.3em" );
+                    $(".list_items .sidebar_icon_menu").css( "width", "3.5%" );
+                    $(".list_items .favourite_item_container").css( "width", "3.5%" );
+                    $("#small_menu:hover").css( "width", "100%" );
+
+                    // media queries
+                    if($('#main_container').width()<1366){
+                        $("#small_menu:hover").css( "padding-top", "0.2em" );
+                        $("#small_menu:hover").css( "padding-bottom", "0.2em" );
+                    }else{
+                        $("#small_menu:hover").css( "padding-top", "0.5em" );
+                        $("#small_menu:hover").css( "padding-bottom", "0.5em" );
+                    }
+
+                    if($('#homeSubmenu li').hasClass( "active" )){
+                        $('#sub_serv').addClass( "active left_menu_selected" );
+                    }
+
                     split = Split(['#left_menu', '#right_panel'], {sizes: [2.8, 97.2], minSize: [40, 900]}); 
                 }
                 

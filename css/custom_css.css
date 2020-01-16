@@ -661,7 +661,8 @@ i.far.fa-file-pdf{
 	font-size: 1.6rem;
 	font-weight: 600;
 }
-.contact_img{
+.contact_img,
+.folder_tree_container{
 	margin: 0 auto;
 	padding: 1.2rem;
 }
